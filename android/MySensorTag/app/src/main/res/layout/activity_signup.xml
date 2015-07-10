@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg_4">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/login_">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_mailedit"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittext_top_bg"
+            android:hint="@string/hint_email"
+            android:padding="10dp"
+            android:layout_marginTop="-2dp"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:alpha="0.6"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_idedit"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_marginTop="-2dp"
+            android:hint="@string/hint_user_name"
+            android:background="@drawable/edittext_default_bg"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/ic_action_person"
+            android:alpha="0.6"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:layout_marginTop="-2dp"
+            android:ems="10"
+            android:background="@drawable/edittext_default_bg"
+            android:hint="@string/hint_password"
+            android:id="@+id/reg_passedit"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/ic_action_accounts"
+            android:alpha="0.6"
+            />
+
+
+
+        <Button
+            android:id="@+id/reg_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buttontext_signup"
+            android:layout_below="@+id/reg_mail"
+            android:layout_marginTop="30dp"
+            android:alpha="0.6"/>
+
+    </LinearLayout>
+</RelativeLayout>

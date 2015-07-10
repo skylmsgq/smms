@@ -1,0 +1,49 @@
+设备查询（位置状态）
+数据展现，结合地理位置
+数据统计和优化
+
+1度111320米
+0.00449156度500米
+
+情景感知的数据质量管理
+
+* 格子设计
+上海市经纬度范围
+30.676443~31.8733 120.862372~122.006022
+地图左边经度小，上面纬度高
+故以(120.862372,31.8733)为起点(左上角)
+共267行(31.8733~30.6740535)
+共255列(120.862372~122.00772)
+
+所以需要一个267*255=68085的一维数组(行优先)，存储以下内容:
+* 各个格子的经纬度范围
+* 该格子内的个人气象站数量及对应各项传感器值
+* 该格子内的个人气象站各项传感器平均值
+* 该格子内的气象站各项传感器值
+* 该格子内，气象站各项传感器值，和，个人气象站各项传感器平均值，之差
+
+{
+   	deviceId: sensor[key]['deviceId'],
+    dateTime: sensor[key]['dateTime'],
+    temperature: sensor[key]['temperature'],
+    humidity: sensor[key]['humidity'],
+    pressure: sensor[key]['pressure'],
+    latitude: sensor[key]['latitude'],
+    longitude: sensor[key]['longitude']
+}
+
+1.cell_data_init($id)
+2.$station_id = rand(0,13)
+3.$mobile_station_data 
+4.errror
+5.统计值
+
+SMMS气象数据两者误差上海边界
+温度湿压强
+OpenSensor首页AndroidAppiPhone关于我们商店登录
+
+station数据和统计值
+errror和统计值逻辑问题（0忽略）
+
+
+
